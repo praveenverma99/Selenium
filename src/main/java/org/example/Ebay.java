@@ -18,6 +18,7 @@ public class Ebay{
       JavascriptExecutor js = (JavascriptExecutor) driver;
       driver.findElement(By.cssSelector("#gh-ac")).sendKeys("Iphone 12");
       driver.findElement(By.cssSelector("#gh-btn")).click();
-      js.executeScript("window.scrollby(0,300)");
+      js.executeScript("window.scrollby(0,500)");
+
     }
 }
