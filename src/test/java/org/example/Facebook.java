@@ -65,6 +65,9 @@ public class Facebook {
         Thread.sleep(2000);
 
         driver.findElement(By.cssSelector("#cookie-use-link"));
+        Thread.sleep(5000);
+        driver.switchTo().window(originalWindow);
+
 
         Set<String> tabs = driver.getWindowHandles();
         for (String tab : tabs) {
