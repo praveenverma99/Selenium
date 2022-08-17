@@ -19,7 +19,7 @@ public class Facebook {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.facebook.com/");
         driver.manage().window().maximize();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         driver.findElement(By.linkText("Create New Account")).click();
         Thread.sleep(1000);
         driver.findElement(By.name("firstname")).sendKeys("Praveen");
@@ -80,7 +80,7 @@ public class Facebook {
         driver.switchTo().window(originalWindow);
 
           driver.findElement(By.name("websubmit")).click();
-          Thread.sleep(2000);
+         Thread.sleep(2000);
           driver.quit();
 
 
