@@ -4,19 +4,20 @@ import java.util.Scanner;
 
 public class InArray {
     public static void main(String[] args) {
-
-           //    int a[] = {10,20,30,100,50};
-                  int a[] = new int[5];
         Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the size of the: ");
+               int y = scanner.nextInt();
+                int z = y+1;
+                  int a[] = new int[z];
                     for ( int i=0; i<a.length ; i++ )
                     {
-                        System.out.println("Enter Value in array ");
-                        int n = scanner.nextInt();
-                        a[i] = n;
+                        System.out.print("Enter Value in array : ");
+                        a[i] = scanner.nextInt();
                     }
 
 
-                     int max = 0;
+                                int max = 0;
                        for (int i =0; i<a.length; i++)
                        {
                            if(a[i]>max)
@@ -25,7 +26,12 @@ public class InArray {
                            }
 
                        }
-                     System.out.println(max);
+                       System.out.print("Array made: ");
+                       for(int i = 0; i<a.length; i++)
+                       {
+                           System.out.print(a[i] +" ");
+                       }
+                     System.out.print('\n' + "Max. No. in Array: " + max);
 
     }
 }
