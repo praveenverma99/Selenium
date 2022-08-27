@@ -10,7 +10,7 @@ public class Factorial {
         System.out.println("Enter integer: ");
         int a = scan.nextInt();
                 long factorial =1;
-                for (int i=1; i<=a; i++  ) {
+                for (int i=a; i>=1; i--  ) {
 
                         factorial =factorial* i;
 
