@@ -8,7 +8,7 @@ import java.util.Set;
 import java.util.Iterator;
 public class New {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\vsver\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", ";C:\\Users\\prave\\chromedriver_win32 (1)\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://secure.indeed.com/account/login");
         //implicit wait

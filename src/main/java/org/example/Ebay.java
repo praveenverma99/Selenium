@@ -15,7 +15,7 @@ public class Ebay{
 
     public static void main(String[] args) throws InterruptedException, AWTException {
 
-      System.setProperty("webdriver.chrome.driver","C:\\Users\\vsver\\Downloads\\chromedriver_win32\\chromedriver.exe");
+      System.setProperty("webdriver.chrome.driver","C:\\Users\\prave\\chromedriver_win32 (1)\\chromedriver.exe");
       WebDriver driver = new ChromeDriver();
       driver.get("https://www.amazon.in/");
       driver.manage().window().maximize();

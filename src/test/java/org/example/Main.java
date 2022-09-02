@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\vsver\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\prave\\chromedriver_win32 (1)\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.facebook.com/");
         driver.manage().window().maximize();
@@ -32,7 +32,7 @@ public class Main {
          WebElement forgotAccount =driver.findElement(By.linkText("Forgotten password?"));
          clickOn(driver, forgotAccount, 10);
 
-
+               driver.close();
     }
        public  static void sendKeys(WebDriver driver1, WebElement element, int timeout, String value)
        {

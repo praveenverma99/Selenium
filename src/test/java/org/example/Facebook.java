@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class Facebook {
     public static void main(String[] args) throws Exception {
-        System.setProperty("webdriver.chrome.driver", "\"C:\\Users\\prave\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\prave\\chromedriver_win32 (1)\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.facebook.com/");
         driver.manage().window().maximize();
