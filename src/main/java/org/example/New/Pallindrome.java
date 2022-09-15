@@ -1,4 +1,4 @@
-package New;
+package org.example.New;
 
 import java.sql.SQLOutput;
 import java.util.Scanner;

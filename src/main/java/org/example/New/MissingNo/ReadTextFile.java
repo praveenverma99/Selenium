@@ -1,4 +1,4 @@
-package New.MissingNo;
+package org.example.New.MissingNo;
 
 import javax.annotation.processing.Filer;
 import java.io.*;

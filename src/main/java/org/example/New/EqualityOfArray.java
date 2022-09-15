@@ -1,4 +1,4 @@
-package New;
+package org.example.New;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

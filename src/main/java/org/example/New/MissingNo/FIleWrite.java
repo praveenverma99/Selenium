@@ -1,4 +1,4 @@
-package New.MissingNo;
+package org.example.New.MissingNo;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

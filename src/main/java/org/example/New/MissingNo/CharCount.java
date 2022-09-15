@@ -1,4 +1,4 @@
-package New.MissingNo;
+package org.example.New.MissingNo;
 
 public class CharCount {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package New;
+package org.example.New;
 
 public class Fibonacci {
     public static void main(String[] args) {

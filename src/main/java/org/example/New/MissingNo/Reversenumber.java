@@ -1,4 +1,4 @@
-package Module001;
+package org.example.New.MissingNo;
 
 import java.sql.SQLOutput;
 import java.util.Scanner;

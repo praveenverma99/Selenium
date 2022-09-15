@@ -1,4 +1,4 @@
-package New.MissingNo;
+package org.example.New.MissingNo;
 
 import org.checkerframework.checker.units.qual.h;
 import org.openqa.selenium.remote.tracing.opentelemetry.SeleniumSpanExporter;

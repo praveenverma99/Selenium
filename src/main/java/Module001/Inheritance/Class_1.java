@@ -4,15 +4,29 @@ import org.openqa.selenium.json.JsonOutput;
 
 import java.sql.SQLOutput;
 
-public class Class_1 {
+ class Class_1 {
 
-    void A()
-        {
-        System.out.println("a");
-    }
+        double l;
+     double b;
 
-    public static void main(String[] args) {
+      double h;
 
-              
-    }
-  }
+        double size;
+             void Showlbh(){
+                 System.out.println(l + b +h);
+             }
+     void showlbh(double size)
+     {
+         System.out.println("size :" + size);
+     }
+     void Showlbh(double l, double b)
+     {
+         System.out.println("Area :" + l*b);
+     }
+
+     void Showlbh( double l,double b, double h) {
+           System.out.println(" Volume :" + l*b*h);
+       }
+
+
+ }
