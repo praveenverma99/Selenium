@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.sql.SQLOutput;
 import java.util.Set;
 
 public class Facebook {
@@ -63,7 +64,8 @@ public class Facebook {
         Thread.sleep(5000);
         driver.switchTo().window(originalWindow);
 
-
+        String A =  driver.getTitle();
+        System.out.println(A);
         Set<String> tabs = driver.getWindowHandles();
         for (String tab : tabs) {
             if(!tab.equalsIgnoreCase(originalWindow)) {

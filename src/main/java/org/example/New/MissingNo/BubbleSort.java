@@ -2,9 +2,9 @@ package org.example.New.MissingNo;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
-
 public class BubbleSort {
     public static void main(String[] args) {
+
 
                      int a [] = {100 , 20 , 500 , 60 , 12 , 10 } ;
 

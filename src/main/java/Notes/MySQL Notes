@@ -1,0 +1,158 @@
+* How to view all databases.
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| ducat              |
+| mysql              |
+| test               |
++--------------------+
+4 rows in set (0.01 sec)
+
+mysql>
+-----------------------
+* How to create new Database.
+mysql> create database TCS;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| ducat              |
+| mysql              |
+| tcs                |
+| test               |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql>
+--------------------------
+* How to Use databases.
+mysql> use tcs;
+Database changed
+mysql>
+-------------------------
+* How to delete databases.
+mysql> drop database tcs;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| ducat              |
+| mysql              |
+| test               |
++--------------------+
+4 rows in set (0.00 sec)
+--------------------------------
+**** How to view all data tables
+mysql> show tables;
+--------------------------------------
+** How to create Data Table into Database.
+mysql> use ducat;
+Database changed
+mysql> create table Employee(Emp_Id varchar(5) primary Key,Emp_name Varchar(20),Designation varchar(10));
+Query OK, 0 rows affected (0.03 sec)
+-------------------------------------------
+** How to view data table details in databases.
+mysql> desc employee;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| Emp_Id      | varchar(5)  | NO   | PRI |         |       |
+| Emp_name    | varchar(20) | YES  |     | NULL    |       |
+| Designation | varchar(10) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+mysql>
+------------------------------------------------------------------
+** How to insert values in datatables.
+mysql> insert into employee values('E001','Rohit','Manager');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employee values('E002','Amit','Dev');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employee values('E003','Ashok','Dev');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employee values('E004','karnveer','Dev');
+Query OK, 1 row affected (0.00 sec)
+---------------------------------------------------------
+** How to view all data tables values.
+mysql> select * from employee;
++--------+----------+-------------+
+| Emp_Id | Emp_name | Designation |
++--------+----------+-------------+
+| E001   | Rohit    | Manager     |
+| E002   | Amit     | Dev         |
+| E003   | Ashok    | Dev         |
+| E004   | karnveer | Dev         |
++--------+----------+-------------+
+4 rows in set (0.00 sec)
+
+mysql>
+-----------------------------------------**********Alter Statement
+** How to alter table in exhisting datatable..?
+SQL> alter table IT add sal int;
+ altered.
+
+SQL> desc it;
+SQL> select * from IT;
+-------------------------------------------------****** Update Statement
+** How to update values in data table..?
+mysql> update employee set sal=5000 where Emp_Id='E001';
+mysql> select * from employee where sal > 65000;
+mysql> select * from employee where sal < 65000;
+
+1 row updated.
+
+SQL> select * from IT;
+
+        ID NAME                      DEPT  E_MAIL                      SAL
+---------- ------------------------- ----- -------------------- ----------
+         1 suresh                    java  skumar@gmail.com           5000
+         2 mahesh                    PHP   Mahes@yahoo.com
+-------------------------------------------------***** Delete Statement
+** How to delete particular table values..?
+mysql> delete from employee where Emp_id='E004';
+
+1 row deleted.
+
+SQL> select * from IT;
+
+        ID NAME                      DEPT  E_MAIL                      SAL
+---------- ------------------------- ----- -------------------- ----------
+         1 suresh                    java  skumar@gmail.com           5000
+         2 mahesh                    PHP   Mahes@yahoo.com            3500
+===============================================================================
+how to delete datatable column name in my sql
+mysql> alter table it drop column emp_name;
+================================================
+----------------------------------------------**** Max/Min/Avg/Sum/Count/between Statement
+** How to check maximum salary..?
+SQL> select max(sal) from employee;
+mysql> select min(sal) from emp;
+mysql> select count(sal) from emp;
+mysql> select sum(sal) from emp;
+mysql> select avg(sal) from emp;
+SQL> select * from employee where sal between 5000 and 15000;
+
+  MAX(SAL)
+----------
+     10000
+----------------------------------------------***** Like Statement
+mysql> select * from employee where Emp_name like'a%';  [ First Char of 'A' ]
+mysql> select * from emp where ename like'r%';  [ First char of 'R' ]
+mysql> select * from employee where Emp_name like'_m%'; [ Second Character of 'h' find]
+mysql> select * from employee where emp_name like'%t';  [ Last Char of 'T' ]
+mysql> select * from employee where emp_name like'__h%';  [ Skip first Two Char 'A' ]
+
+
+

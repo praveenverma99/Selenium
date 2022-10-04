@@ -1,32 +1,23 @@
 package Module001.Inheritance;
 
-import org.openqa.selenium.json.JsonOutput;
+public class Class_1 {
 
-import java.sql.SQLOutput;
+              public    double l , h ;
 
- class Class_1 {
+    public Class_1(double a, double b)
+    {
+        l = a;
+        h =b ;
+    }
 
-        double l;
-     double b;
+                 public double area()
+                    {
+                        System.out.println("Area of Figure " );
+                        return l/h;
+                    }
 
-      double h;
+                    public void set(){
+                        System.out.println("Print");
+                    }
+    }
 
-        double size;
-             void Showlbh(){
-                 System.out.println(l + b +h);
-             }
-     void showlbh(double size)
-     {
-         System.out.println("size :" + size);
-     }
-     void Showlbh(double l, double b)
-     {
-         System.out.println("Area :" + l*b);
-     }
-
-     void Showlbh( double l,double b, double h) {
-           System.out.println(" Volume :" + l*b*h);
-       }
-
-
- }
