@@ -1,4 +1,4 @@
-package org.example;
+package Headless;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,9 +12,12 @@ public class Headless {
 
                       ChromeOptions options = new ChromeOptions();
                       options.setHeadless(true);
+                        options.addArguments("--headless");
+
                       WebDriver driver = new ChromeDriver(options);
                     driver.get("https://www.facebook.com/");
                     System.out.println(driver.getTitle());
+
 
     }
 }
