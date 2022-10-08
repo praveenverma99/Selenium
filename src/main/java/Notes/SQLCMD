@@ -1,0 +1,12 @@
+
+   SQL Commands
+
+   1. DDL ( Data Definition language) - Create,Alter,DROP,Trucate,Rename
+
+   2. DML ( Data Managment language) - Insert, Update, Delete
+
+   3. DRL/DQL (Data Retrieval/Data Query Language) - SELECT
+
+    4. TCL ( Transcation Control language) - Commit,rollback,savepoint
+
+    5. DCL (Data control language) - Grant Revoke
