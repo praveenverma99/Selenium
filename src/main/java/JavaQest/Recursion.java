@@ -8,6 +8,7 @@ public class Recursion {
                        return  0;
                    result = func( n -1) ;
                    return  result;
+
                }
                   public static void main(String[] args) {
                          Recursion obj = new Recursion();
