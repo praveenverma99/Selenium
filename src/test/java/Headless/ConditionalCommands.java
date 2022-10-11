@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.sql.SQLOutput;
+
 public class ConditionalCommands {
 
     public static void main(String[] args) throws InterruptedException {
@@ -28,6 +30,7 @@ public class ConditionalCommands {
         System.out.println(Driver.findElement(By.xpath("//label[contains(text(),'Female')]")).isSelected());
         System.out.println(Driver.findElement(By.xpath("//label[contains(text(),'Male')]")).isSelected());
         System.out.println(Driver.findElement(By.xpath("//label[contains(text(),'Custom')]")).isSelected());
+        System.out.println("");
         Driver.close();
     }
 }
